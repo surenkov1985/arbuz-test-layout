@@ -1,0 +1,135 @@
+.head {
+
+    &__row {
+        padding: 25px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {}
+
+    &__nav {
+        margin-left: auto;
+
+        &_list {
+            display: flex;
+            align-items: center;
+            gap: 52px;
+        }
+    }
+
+    &__right {
+        margin-left: 125px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @media screen and (max-width: 1300px) {
+            margin-left: 64px;
+        }
+    }
+
+    &__scls {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+.foot {
+    background: var(--clr-light-blue);
+
+    &__row {
+        padding: 70px 0 45px;
+        display: flex;
+        gap: 120px;
+    }
+
+    &__left {}
+
+    &__contacts {
+        margin-top: 112px;
+
+        &_list {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            color: var(--clr-blue);
+            font-size: 1rem;
+            line-height: (22.4/16);
+        }
+    }
+
+    &__scls {
+        display: flex;
+        gap: 10px;
+        margin-top: 18px;
+
+        & .scls-link {
+            width: 45px;
+            height: 45px;
+        }
+    }
+
+    &__nav {
+
+        &_list {
+            display: flex;
+            gap: 87px;
+
+            & .submenu {
+
+                & li {
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+
+                    & a {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        &_title {
+            line-height: (22.4 / 16);
+            color: #799EE5;
+            height: 30px;
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__copy {
+        margin-top: auto;
+        line-height: 2;
+        font-size: 12px;
+        color: var(--clr-menu-title);
+
+        &_links {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            & a {
+                color: var(--clr-menu-title);
+                position: relative;
+
+                &:not(:last-child) {
+                    &::after {
+                        content: '•';
+                        position: absolute;
+                        left: calc(100% + 3px);
+                    }
+                }
+
+                &:hover {
+                    color: var(--clr-blue);
+                }
+            }
+        }
+    }
+}
