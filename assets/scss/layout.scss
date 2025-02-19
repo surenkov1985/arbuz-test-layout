@@ -41,7 +41,7 @@
     &__row {
         padding: 70px 0 45px;
         display: flex;
-        gap: 120px;
+        gap: 125px;
     }
 
     &__left {}
@@ -52,7 +52,7 @@
         &_list {
             display: flex;
             flex-direction: column;
-            gap: 3px;
+            gap: 7px;
             color: var(--clr-blue);
             font-size: 1rem;
             line-height: (22.4/16);
@@ -88,6 +88,10 @@
                     }
                 }
             }
+        }
+
+        &_item {
+            min-width: 129px;
         }
 
         &_title {

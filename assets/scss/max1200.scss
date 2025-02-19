@@ -1,0 +1,16 @@
+@media screen and (max-width: 1200px) {
+    .head {
+
+
+        &__nav {
+
+            &_list {
+                gap: 20px;
+            }
+        }
+
+        &__right {
+            margin-left: 40px;
+        }
+    }
+}

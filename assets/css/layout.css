@@ -34,7 +34,7 @@
 .foot__row {
   padding: 70px 0 45px;
   display: flex;
-  gap: 120px;
+  gap: 125px;
 }
 .foot__contacts {
   margin-top: 112px;
@@ -42,7 +42,7 @@
 .foot__contacts_list {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 7px;
   color: var(--clr-blue);
   font-size: 1rem;
   line-height: 1.4;
@@ -67,6 +67,9 @@
 }
 .foot__nav_list .submenu li a {
   width: 100%;
+}
+.foot__nav_item {
+  min-width: 129px;
 }
 .foot__nav_title {
   line-height: 1.4;

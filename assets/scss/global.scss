@@ -6,7 +6,7 @@
 	transition: all 0.3s;
 	padding: 18px 38px;
 	white-space: nowrap;
-	gap: 10px;
+	gap: 20px;
 	background: #0048CE linear-gradient(90deg, rgba(0, 72, 206, 0.4) 30%, rgba(212, 223, 248, 0.4) 60%);
 	line-height: (22.4 / 16);
 	color: var(--clr-white);
@@ -93,7 +93,7 @@
 	padding: 6px 20px;
 	font-size: 1rem;
 	line-height: (22.4 / 16);
-	gap: 10px;
+	gap: 3px;
 	border-radius: 10px;
 	position: relative;
 	white-space: nowrap;
@@ -184,6 +184,7 @@
 		width: auto;
 		height: auto;
 		background: none;
+		color: var(--clr-white);
 	}
 
 	&:hover {
@@ -191,13 +192,20 @@
 	}
 }
 
+.sm_text {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: (20 / 14);
+
+}
+
 
 .logo {
 	font-family: var(--font-title);
 	font-size: clamp(1.375rem, 1.0669rem + 1.3146vw, 2.25rem);
 	font-weight: 700;
-	line-height: (50 / 36);
-	letter-spacing: -1px;
+	line-height: 1.4;
+	letter-spacing: -.5px;
 	color: var(--clr-blue);
 }
 

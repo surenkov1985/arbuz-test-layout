@@ -1,0 +1,141 @@
+.fs {
+  position: relative;
+}
+.fs__content {
+  padding: 80px 108px 80px 100px;
+  border-radius: 1rem;
+  background: #6D6C72;
+  position: relative;
+  overflow: hidden;
+  color: var(--clr-white);
+}
+.fs__content::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url(../img/fs_decor.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.fs__content_top {
+  width: 60.8938547486%;
+  margin-bottom: 74px;
+}
+.fs__content_bottom {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  position: relative;
+  z-index: 3;
+}
+.fs__content_text h1 {
+  margin-bottom: 1.5rem;
+}
+.fs__content_text p {
+  width: 85%;
+}
+.fs__content_person {
+  position: absolute;
+  bottom: 0;
+  right: 108px;
+  width: 36.0872954014%;
+  z-index: 2;
+}
+.fs__content_person img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.fs__contacts {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fs__contacts h4 {
+  margin-bottom: 6px;
+}
+.fs__contacts_role {
+  font-size: 15px;
+  line-height: 1.4666666667;
+}
+.fs__scls {
+  display: flex;
+  gap: 15px;
+}
+
+.depts {
+  padding-top: 92px;
+  padding-bottom: 80px;
+}
+.depts__rows {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.dept__title {
+  margin-bottom: 40px;
+}
+.dept__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px 40px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--clr-white);
+  box-shadow: 0px 14px 44px 0px rgba(125, 140, 180, 0.0705882353);
+  height: auto;
+  text-align: center;
+  position: relative;
+}
+.card:hover img {
+  scale: 1.1;
+}
+.card__img {
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+}
+.card__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transition: scale 0.5s;
+}
+.card__content {
+  display: flex;
+  flex-direction: column;
+  padding: 13px 16px 37px;
+  align-items: center;
+}
+.card__content_name {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  color: var(--clr-black);
+}
+.card__content_role {
+  color: var(--clr-dark-blue);
+  max-width: 210px;
+}
+.card__scls {
+  position: absolute;
+  display: flex;
+  gap: 12px;
+  top: 20px;
+  left: 20px;
+}

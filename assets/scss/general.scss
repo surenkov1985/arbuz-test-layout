@@ -306,7 +306,7 @@ h1,
 	font-family: var(--font-title);
 	font-size: clamp(1.75rem, 1.4419rem + 1.3146vw, 2.625rem);
 	line-height: 1.2;
-	letter-spacing: -0.2px;
+	letter-spacing: -0.5px;
 }
 
 h2,
@@ -314,7 +314,7 @@ h2,
 .text-content h2 {
 	font-family: var(--font-title);
 	font-size: clamp(1.3125rem, 0.9824rem + 1.4085vw, 2.25rem);
-	line-height: 1;
+	line-height: (44 / 36);
 	// letter-spacing: 1.4px;
 }
 
@@ -338,8 +338,6 @@ h5,
 	font-family: var(--font-accent);
 	font-size: 1rem;
 	line-height: (24 / 16);
-	line-height: 24px;
-	letter-spacing: 0%;
 
 
 	&:not(:last-child) {
