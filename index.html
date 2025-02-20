@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="/assets/css/max768.css">
     <link rel="stylesheet" href="/assets/css/max576.css">
     <link rel="stylesheet" href="/assets/css/max360.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
     <title>Arbuz test layout</title>
 </head>
 
@@ -101,6 +102,11 @@
                         <div class="head__language">
                             <a href="/" class="language-link link">En</a>
                         </div>
+                        <button class="head__burger btn-burger">
+                            <span class="lines">
+                                <span class="line"></span><span class="line"></span><span class="line"></span>
+                            </span>
+                        </button>
                     </div>
 
                 </div>
@@ -116,7 +122,7 @@
                     <div class="fs__content">
                         <div class="fs__content_top">
                             <div class="fs__content_text text_content">
-                                <h1>Доверие и сервисная модель — основные показатели успеха в работе компании</h1>
+                                <h1>Доверие и сервисная модель — основные показатели успеха в&nbsp;работе компании</h1>
                                 <p>Рынок недвижимости в 2025 году сталкивается с серьезными вызовами. Изменились
                                     ключевые тенденции и запросы инвесторов.
                                 </p>
@@ -518,52 +524,88 @@
                     </div>
 
                     <div class="foot__right">
-                        <nav class="foot__nav">
-                            <ul class="foot__nav_list">
-                                <li class="foot__nav_item">
-                                    <p class="foot__nav_title">О компании</p>
-                                    <ul class="submenu">
-                                        <li>
-                                            <a href="#" class="link">О нас</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link">Команда</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link">Контакты</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link">Блог</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="foot__nav_item">
-                                    <p class="foot__nav_title">Недвижимость</p>
-                                    <ul class="submenu">
-                                        <li>
-                                            <a href="#" class="link">Жилая</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link">Коммерческая</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link">Инвестиционная</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="foot__nav_item">
-                                    <p class="foot__nav_title">Услуги</p>
-                                    <ul class="submenu">
-                                        <li>
-                                            <a href="#" class="link">По подбору недвижимости</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link">Юридическое сопровождение</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </nav>
+                        <div class="foot__nav">
+                            <div class="foot__nav_list">
+                                <div class="foot__nav_item foot__accordion accordion">
+                                    <div class="accordion_title foot__nav_title">
+                                        <p class="">О компании</p>
+                                        <span class="caret">
+
+                                            <svg width="12" height="7" viewBox="0 0 8 5" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 1L4.00163 4L1.00326 1" stroke="#0048CE" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="submenu accordion_body">
+                                        <div class="accordion_content">
+                                            <div>
+                                                <a href="#" class="link">О нас</a>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="link">Команда</a>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="link">Контакты</a>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="link">Блог</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="foot__nav_item foot__accordion accordion">
+                                    <div class="accordion_title foot__nav_title">
+                                        <p class="">Недвижимость</p>
+                                        <span class="caret">
+                                            <svg width="12" height="7" viewBox="0 0 8 5" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 1L4.00163 4L1.00326 1" stroke="#0048CE" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="submenu accordion_body">
+                                        <div class="accordion_content">
+                                            <div>
+                                                <a href="#" class="link">Жилая</a>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="link">Коммерческая</a>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="link">Инвестиционная</a>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="foot__nav_item foot__accordion accordion">
+                                    <div class="accordion_title foot__nav_title">
+                                        <p class="">Услуги</p>
+                                        <span class="caret">
+                                            <svg width="12" height="7" viewBox="0 0 8 5" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 1L4.00163 4L1.00326 1" stroke="#0048CE" />
+                                            </svg>
+                                        </span>
+                                    </div>
+
+                                    <div class="submenu accordion_body">
+                                        <div class="accordion_content">
+                                            <div>
+                                                <a href="#" class="link">По подбору недвижимости</a>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="link">Юридическое сопровождение</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="foot__copy">
                             <div class="copyrait">© 2025 Estate. Все права защищены. При копировании материалов сайта
                                 ссылка на источник обязательна. </div>
@@ -577,8 +619,75 @@
                 </div>
             </div>
         </footer>
-    </div>
 
+        <div class="mobile section">
+            <div class="container">
+                <div class="mobile__body">
+                    <div class="mobile__nav">
+                        <div class="mobile__nav_list">
+                            <div class="mobile__nav_item">
+                                <a href="#" class="mobile__nav_title link">Недвижимость</a>
+                                <div class="mobile__submenu">
+                                    <a href="#" class="mobile__submenu_item link">Жилая</a>
+                                    <a href="#" class="mobile__submenu_item link">Коммерческая</a>
+                                    <a href="#" class="mobile__submenu_item link">Инвестиционная</a>
+                                    <a href="#" class="mobile__submenu_item link">Эксклюзивная</a>
+                                </div>
+                            </div>
+                            <div class="mobile__nav_item">
+                                <a href="#" class="mobile__nav_title link">Услуги</a>
+                            </div>
+                            <div class="mobile__nav_item">
+                                <a href="#" class="mobile__nav_title link">Блог</a>
+                            </div>
+                            <div class="mobile__nav_item">
+                                <a href="#" class="mobile__nav_title link">О компании</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile__foot">
+
+                        <div class="mobile__contacts">
+                            <div class="foot__contacts_list">
+                                <div><a href="tel:79998548585" class="link">+7 999 854 85 85</a> — Москва</div>
+                                <div><a href="tel:79144873838" class="link">+7 914 487 38 38</a> — Владивосток</div>
+                            </div>
+                            <div class="foot__scls">
+                                <a href="#" class="scls-link">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z"
+                                            fill="#0048CE" />
+                                        <path
+                                            d="M8.52204 14.6928L15.8803 11.6548C16.6066 11.3383 19.0699 10.3257 19.0699 10.3257C19.0699 10.3257 20.2068 9.88261 20.112 10.9586C20.0805 11.4016 19.8278 12.9523 19.5752 14.6295L18.7857 19.5979C18.7857 19.5979 18.7225 20.3258 18.1856 20.4524C17.6488 20.5789 16.7645 20.0093 16.6066 19.8827C16.4803 19.7878 14.2381 18.3637 13.417 17.6675C13.1959 17.4776 12.9433 17.0979 13.4486 16.6548C14.5855 15.6105 15.9434 14.313 16.7645 13.4902C17.1435 13.1105 17.5225 12.2244 15.9434 13.3004L11.4906 16.3067C11.4906 16.3067 10.9853 16.6232 10.0379 16.3384C9.09048 16.0536 7.98517 15.6738 7.98517 15.6738C7.98517 15.6738 7.22724 15.1991 8.52204 14.6928Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="scls-link">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z"
+                                            fill="#0048CE" />
+                                        <path
+                                            d="M11.4009 20.0094L11.6579 20.1611C12.7378 20.7992 13.976 21.1366 15.2386 21.1373H15.2414C19.119 21.1373 22.275 17.9961 22.2764 14.1355C22.277 12.2645 21.546 10.5054 20.2178 9.18181C18.8894 7.85849 17.1233 7.12921 15.2439 7.12844C11.3633 7.12844 8.20735 10.2691 8.20589 14.1298C8.20538 15.4527 8.57711 16.7412 9.28145 17.8558L9.44886 18.1208L8.73798 20.7045L11.4009 20.0094ZM6.70587 22.7059L7.90667 18.3407C7.166 17.0632 6.77636 15.614 6.77697 14.1294C6.77877 9.48465 10.5756 5.70587 15.2415 5.70587C17.5057 5.70684 19.6308 6.5841 21.2289 8.17639C22.8269 9.76867 23.7066 11.8852 23.7059 14.1362C23.7039 18.7806 19.9063 22.5601 15.2415 22.5601C15.2412 22.5601 15.2417 22.5601 15.2415 22.5601H15.2379C13.8213 22.5596 12.4294 22.2059 11.1931 21.5346L6.70587 22.7059Z"
+                                            fill="white" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M13.7796 11.3019C13.6506 11.0147 13.5148 11.009 13.3921 11.0039C13.2917 10.9997 13.1768 10.9999 13.062 10.9999C12.9472 10.9999 12.7606 11.0431 12.6028 11.2157C12.4449 11.3882 11.9999 11.8054 11.9999 12.6537C11.9999 13.5022 12.6172 14.322 12.7032 14.4372C12.7893 14.5521 13.8947 16.3488 15.6451 17.04C17.1 17.6144 17.3961 17.5001 17.7119 17.4713C18.0277 17.4426 18.7309 17.0543 18.8744 16.6517C19.0179 16.2491 19.0179 15.9039 18.9749 15.8319C18.9318 15.76 18.817 15.7168 18.6447 15.6307C18.4724 15.5444 17.6257 15.1272 17.4679 15.0697C17.31 15.0122 17.1952 14.9835 17.0803 15.1561C16.9655 15.3285 16.6356 15.7168 16.5351 15.8319C16.4346 15.9471 16.3341 15.9615 16.1619 15.8752C15.9896 15.7887 15.4349 15.6068 14.7769 15.0194C14.2649 14.5624 13.9192 13.9979 13.8187 13.8253C13.7183 13.6528 13.808 13.5594 13.8943 13.4735C13.9717 13.3962 14.0666 13.2721 14.1528 13.1715C14.2387 13.0708 14.2674 12.9989 14.3248 12.8839C14.3823 12.7688 14.3535 12.6681 14.3105 12.5818C14.2674 12.4956 13.9327 11.6428 13.7795 11.3019"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="/assets/libs/jquery/jquery.js"></script>
+    <script src="/assets/js/index.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,17 @@
+@media screen and (max-width: 1440px) {
+    .fs {
+
+        &__content {
+            padding: 64px 84px 64px 80px;
+
+            &_top {
+                width: calc(720 / 1074 * 100%);
+                margin-bottom: 74px;
+            }
+
+            &_person {
+                right: 84px;
+            }
+        }
+    }
+}

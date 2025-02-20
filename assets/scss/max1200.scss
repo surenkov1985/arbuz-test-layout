@@ -13,4 +13,44 @@
             margin-left: 40px;
         }
     }
+
+    .fs {
+
+        &__content {
+            padding: 56px 64px 56px 64px;
+
+            &_top {
+                width: calc(840 / 1074 * 100%);
+                margin-bottom: 56px;
+            }
+
+            &_person {
+                right: 32px;
+            }
+        }
+    }
+
+    .depts {
+        padding-top: 80px;
+        padding-bottom: 72px;
+    }
+
+    .foot {
+
+        &__row {
+            gap: 80px;
+            padding: 64px 0 45px;
+        }
+
+        &__nav {
+
+            &_list {
+                gap: 32px 64px;
+            }
+        }
+    }
+
+    .main {
+        margin-top: 96px;
+    }
 }

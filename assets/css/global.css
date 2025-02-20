@@ -34,6 +34,41 @@
   background-position: left;
 }
 
+.btn-burger {
+  width: 30px;
+  height: 19px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.btn-burger.active {
+  height: 22px;
+}
+.btn-burger.active .line:first-child {
+  transform: rotate(-45deg);
+  transform-origin: right;
+}
+.btn-burger.active .line:nth-child(2) {
+  opacity: 0;
+}
+.btn-burger.active .line:nth-child(3) {
+  transform: rotate(45deg);
+  transform-origin: right;
+}
+.btn-burger .lines {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-between;
+  height: 100%;
+}
+.btn-burger .lines .line {
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background: var(--clr-blue);
+  transition: all 0.3s;
+}
+
 @keyframes slideTo {
   from {
     width: 100%;
@@ -84,6 +119,11 @@
   border-radius: 10px;
   position: relative;
   white-space: nowrap;
+}
+@media screen and (max-width: 1200px) {
+  .nav-link {
+    padding: 6px 16px;
+  }
 }
 .nav-link a {
   color: inherit;
@@ -167,7 +207,7 @@
 .sm_text {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.4285714286;
+  line-height: 1.4;
 }
 
 .logo {
@@ -182,6 +222,12 @@
 .section {
   padding-left: 4rem;
   padding-right: 4rem;
+}
+@media screen and (max-width: 1200px) {
+  .section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
 
 #wrapper {
@@ -199,6 +245,11 @@
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
 
 .hidden {
   overflow: hidden;
@@ -206,4 +257,5 @@
 
 .main {
   flex-grow: 1;
+  margin-top: 100px;
 }

@@ -1,0 +1,47 @@
+@media screen and (max-width: 768px) {
+  .section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .main {
+    margin-top: 86px;
+  }
+  .fs__content {
+    padding: 48px 32px;
+  }
+  .fs__content_top {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  .fs__content_bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 480px;
+  }
+  .fs__content_person {
+    width: auto;
+  }
+  .fs__content_text p {
+    width: 100%;
+  }
+  .fs__contacts {
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+  .depts {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+  .card__content {
+    padding: 8px 16px 13px;
+  }
+  .foot__row {
+    gap: 32px;
+    padding: 36px 0 40px;
+  }
+  .foot__contacts {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}

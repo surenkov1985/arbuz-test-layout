@@ -1,0 +1,133 @@
+@media screen and (max-width: 991px) {
+
+    .container {
+        max-width: 760px;
+    }
+
+    .text_content p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .head {
+
+        &__nav {
+            display: none;
+        }
+
+        &__scls {
+            display: none;
+        }
+
+        &__contacts {
+            display: none;
+        }
+
+        &__right {
+            margin-left: auto;
+            gap: 34px;
+        }
+
+        &__burger {
+            display: block;
+        }
+    }
+
+    .fs {
+
+        &__content {
+            padding: 48px;
+
+            &_top {
+                width: calc(870 / 1074 * 100%);
+                margin-bottom: 48px;
+            }
+
+            &_person {
+                right: 32px;
+            }
+
+            &_text {
+
+
+                & h1 {
+                    margin-bottom: 1rem;
+                }
+
+                & p {
+                    width: 89%;
+                }
+            }
+        }
+    }
+
+    .depts {
+        padding-top: 64px;
+        padding-bottom: 64px;
+
+        &__rows {
+            gap: 50px;
+        }
+    }
+
+    .dept {
+
+        &__title {
+            margin-bottom: 30px;
+        }
+
+        &__list {
+            gap: 24px 30px;
+        }
+    }
+
+    .foot {
+
+        &__row {
+            gap: 50px;
+            padding: 56px 0 40px;
+            flex-direction: column;
+
+        }
+
+        &__left {
+            // display: flex;
+            // justify-content: space-between;
+        }
+
+        &__contacts {
+            margin-top: 24px;
+            display: flex;
+            // flex-direction: row-reverse;
+            gap: 24px;
+
+            &_list {
+                font-size: 14px;
+
+                & a {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        &__scls {
+            margin-top: 0;
+        }
+
+        &__nav {
+            margin-bottom: 32px;
+
+            &_list {
+                gap: 24px 48px;
+            }
+        }
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .main {
+        margin-top: 90px;
+    }
+}

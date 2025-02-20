@@ -1,0 +1,225 @@
+@media screen and (max-width: 576px) {
+    .section {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+
+
+    }
+
+    .main {
+        margin-top: 75px;
+    }
+
+    h1 {
+        letter-spacing: 0;
+    }
+
+    .head {
+
+        &__row {
+            padding: 22px 0;
+        }
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .fs {
+        margin-top: 22px;
+
+        &.section {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &__content {
+            padding: 40px 24px 37px;
+
+            &::after {
+                top: auto;
+                bottom: 89px;
+                transform: rotate(-31deg) scaleX(-1);
+                height: 484px;
+                right: -447px;
+                width: 1212px;
+                background-image: url(../img/fs_decor_copy.png);
+            }
+
+            &_top {
+                margin-bottom: 24px;
+            }
+
+            &_person {
+                right: auto;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 323px;
+            }
+        }
+    }
+
+    .depts {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        &__rows {
+            gap: 40px;
+        }
+    }
+
+    .dept {
+
+        &__title {
+            margin-bottom: 24px;
+        }
+
+        &__list {
+            gap: 20px 24px;
+        }
+    }
+
+    .card {
+
+        &__content {
+            padding: 7px 16px 14px;
+
+            &_name {
+                & h5 {
+                    font-size: 1.25rem;
+                }
+            }
+
+            &_role {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .foot {
+
+        &__row {
+            gap: 20px;
+            padding: 22px 0 36px;
+        }
+
+        &__contacts {
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 22px;
+            margin-top: 22px;
+
+            &_list {
+                gap: 4px;
+            }
+        }
+
+        &__scls {
+
+            & .scls-link {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        &__nav {
+            margin-bottom: 16px;
+
+            &_list {
+                gap: 32px;
+            }
+
+            &_item {
+                width: 100%;
+                font-size: 16px;
+                line-height: 28px;
+                position: relative;
+
+                & a {
+                    font-size: 14px;
+                    line-height: 28px;
+                }
+
+                & .submenu {
+                    overflow: hidden;
+                    height: auto;
+                    max-height: 0;
+                }
+
+                &:not(:last-child) {
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        width: 100%;
+                        top: calc(100% + 14px);
+                        height: 1px;
+                        background: #D9E4F8;
+                    }
+                }
+
+                &.active {
+
+                    & .foot {
+
+                        &__nav {
+
+                            &_title {
+                                color: #799EE5;
+
+                                & .caret {
+
+                                    & svg {
+                                        transition: all .2s;
+                                        transform: perspective(100px) rotateX(180deg);
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &_title {
+                justify-content: space-between;
+                align-items: center;
+                color: var(--clr-blue);
+
+                & .caret {
+                    display: flex;
+
+                    & svg {
+                        transition: all .3s;
+                        transform: perspective(100px);
+                    }
+
+                }
+            }
+
+
+        }
+
+        &__copy {
+            font-size: 10px;
+            line-height: 1.8;
+        }
+    }
+
+    .sm-link {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .fs {
+
+        &__content {
+
+            &_bottom {
+                gap: 366px;
+            }
+        }
+    }
+}

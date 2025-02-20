@@ -1,0 +1,12 @@
+@media screen and (max-width: 1440px) {
+  .fs__content {
+    padding: 64px 84px 64px 80px;
+  }
+  .fs__content_top {
+    width: 67.0391061453%;
+    margin-bottom: 74px;
+  }
+  .fs__content_person {
+    right: 84px;
+  }
+}

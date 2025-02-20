@@ -5,4 +5,28 @@
   .head__right {
     margin-left: 40px;
   }
+  .fs__content {
+    padding: 56px 64px 56px 64px;
+  }
+  .fs__content_top {
+    width: 78.2122905028%;
+    margin-bottom: 56px;
+  }
+  .fs__content_person {
+    right: 32px;
+  }
+  .depts {
+    padding-top: 80px;
+    padding-bottom: 72px;
+  }
+  .foot__row {
+    gap: 80px;
+    padding: 64px 0 45px;
+  }
+  .foot__nav_list {
+    gap: 32px 64px;
+  }
+  .main {
+    margin-top: 96px;
+  }
 }
